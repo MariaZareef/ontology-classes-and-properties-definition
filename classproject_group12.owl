@@ -1,0 +1,713 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#creator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#creator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_achievement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_achievement">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_achievement_in_game"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_character -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_character">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_character_in_game"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_feature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_feature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_game_genre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_game_genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_item -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_item">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_item_in_game"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_leaderboard -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_leaderboard">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_leaderboard_in_game"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Leaderboard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_platform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_platform">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Plateforms"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_playing_area -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#has_playing_area">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Playing_area"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#involves_achievement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#involves_achievement">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_achieved_in_session"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#involves_character -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#involves_character">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_character_in_session"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#involves_player -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#involves_player">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_player_in_session"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_achieved_in_session -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_achieved_in_session">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_achievement_in_game -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_achievement_in_game">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_character_in_game -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_character_in_game">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_character_in_session -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_character_in_session">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_even_triggered_by_character -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_even_triggered_by_character">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_event_associated_to_player -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_event_associated_to_player">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_event_in_game -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_event_in_game">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_event_in_session -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_event_in_session">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_event_related_to_item -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_event_related_to_item">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_friend_with_player -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_friend_with_player">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#knows"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player"/>
+        <rdfs:label xml:lang="en">is friend with player</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_item_in_game -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_item_in_game">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_leaderboard_in_game -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_leaderboard_in_game">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Leaderboard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_player_in_session -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_player_in_session">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_session_in_game -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#is_session_in_game">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#knows -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#knows"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#lives_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#lives_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#owns_achievement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#owns_achievement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#owns_character -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#owns_character">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#owns_game -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#owns_game">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#gaming_companies"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#owns_item -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#owns_item">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#plays_game -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#plays_game">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#purchase_game_offering -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#purchase_game_offering">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#In-App_Purchase_Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#unlocks_achievement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#unlocks_achievement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#end_Time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#end_Time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#event_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#event_Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#event_Time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#event_Time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#release_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#release_Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#start_Time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#start_Time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#username -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#username">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Collection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Collection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Completion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Completion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Curiosity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Curiosity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Fandom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Fandom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Feature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Gain_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Gain_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Hardmode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Hardmode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#In-App_Purchase_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#In-App_Purchase_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Item"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Leaderboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Leaderboard">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Lose_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Lose_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Game_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Loyalty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Loyalty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Luck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Luck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Menu_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Menu_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Minigame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Minigame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Multiplayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Multiplayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Paragon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Paragon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Plateforms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Plateforms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Player_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Playing_area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Playing_area"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Session">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Special_play_style -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Special_play_style">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Tutorial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Tutorial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Veteran -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Veteran">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Vituosity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Vituosity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#android -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#android">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Plateforms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#gaming_companies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#gaming_companies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#linux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#linux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Plateforms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#mac -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#mac">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Plateforms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#vr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#vr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Plateforms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#windows -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#windows">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/2/untitled-ontology-2#Plateforms"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
